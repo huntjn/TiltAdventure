@@ -1,0 +1,6 @@
+.gitignore
+
+## Construct 2 ##
+*.uistate.xml
+*.capx.backup*
+*.capx.autosave*
