@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Start" sid="715200550954948" static="0" type="number">0</variable>
+        <event-block sid="199460158419747">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="912570853170853" type="System" />
+            </conditions>
+            <actions>
+                <action id="18" name="Lock orientation" sid="517322123373293" type="Browser">
+                    <param id="0" name="Orientation">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="308145501059992">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="463863497675047" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="119628161876405" type="ball" />
+            </actions>
+            <sub-events>
+                <event-block sid="545110352558544">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="288905795712104" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Request fullscreen" sid="739435319589546" type="Browser">
+                            <param id="0" name="Mode">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="894060294411997">
+            <conditions>
+                <condition id="7" inverted="1" name="Page is visible" sid="674918519380215" type="Browser" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="291443594415472">
+            <conditions>
+                <condition id="9" name="On suspended" sid="169599041485059" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="777606807466314" type="Start">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="366748092691994" type="exit">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Cancel fullscreen" sid="340286517833647" type="Browser" />
+                <action id="12" name="Vibrate" sid="112340487793040" type="Browser">
+                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="388045364817463" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="204856984286381">
+            <conditions>
+                <condition id="17" name="On tap object" sid="104137578783297" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="518755062423248" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="323126771159135" type="System">
+                    <param id="0" name="Object to create">ball</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">160</param>
+                    <param id="3" name="Y">240</param>
+                </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="705573410371920" type="ball">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action id="10" name="Request fullscreen" sid="514014402267797" type="Browser">
+                    <param id="0" name="Mode">2</param>
+                </action>
+                <action id="12" name="Vibrate" sid="135107192019127" type="Browser">
+                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="856437202103767" type="Start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="574097555026446" type="exit">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="525480408648416" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="649362548847056">
+            <conditions>
+                <condition id="17" name="On tap object" sid="326888949102177" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="739952717899097" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="758706839817864" type="Browser">
+                    <param id="0" name="Mode">2</param>
+                </action>
+                <action id="12" name="Vibrate" sid="724929343700690" type="Browser">
+                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="712465006919468" type="Start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="218840315558567" type="exit">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="351795371074461" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="168340341820230" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="958297190452972">
+            <conditions>
+                <condition id="17" name="On tap object" sid="313158233510649" type="Touch">
+                    <param id="0" name="Object">exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="117053933560010" type="Start">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="769791203084688" type="exit">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Cancel fullscreen" sid="359486552302079" type="Browser" />
+                <action id="12" name="Vibrate" sid="209078125317291" type="Browser">
+                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="268996288717391" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="880576187360513">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="670807916264822" type="System">
+                    <param id="0" name="First value">Touch.AccelerationXWithG</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">4</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="503507121040261" type="System">
+                    <param id="0" name="First value">Touch.AccelerationXWithG</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">-4</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="710916820464056">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="495372321730638" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="0" name="Apply force" sid="480930200118511" type="ball">
+                    <param id="0" name="Force X">0</param>
+                    <param id="1" name="Force Y">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="873440345465425">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="757811740455200" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="0" name="Apply force" sid="467712901326714" type="ball">
+                    <param id="0" name="Force X">0</param>
+                    <param id="1" name="Force Y">-3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249466682782290">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="771383244992597" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="0" name="Apply force" sid="981941651985700" type="ball">
+                    <param id="0" name="Force X">3</param>
+                    <param id="1" name="Force Y">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599418140671925">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="775220128387703" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="0" name="Apply force" sid="110625719341556" type="ball">
+                    <param id="0" name="Force X">-3</param>
+                    <param id="1" name="Force Y">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
